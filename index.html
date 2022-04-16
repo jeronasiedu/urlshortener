@@ -10,22 +10,21 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="toastify.css" />
     <!-- Primary Meta Tags -->
     <title>URL shorterner</title>
     <meta name="title" content="URL shorterner" />
     <meta
       name="description"
-      content="Ever wondered how you're going to share that huge link with your friends? We've got you covered. shorten your URLs for free"
+      content="Ever wondered how you were going to share that huge link with your friends? We've got you covered. shorten your URLs for free"
     />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://jeronshorturl.vercel.app" />
+    <meta property="og:url" content="https://jlink.vercel.app" />
     <meta property="og:title" content="URL shorterner" />
     <meta
       property="og:description"
-      content="Ever wondered how you're going to share that huge link with your friends? We've got you covered. shorten your URLs for free"
+      content="Ever wondered how you were going to share that huge link with your friends? We've got you covered. shorten your URLs for free"
     />
     <meta
       property="og:image"
@@ -34,7 +33,7 @@
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://jeronshorturl.vercel.app" />
+    <meta property="twitter:url" content="https://jlink.vercel.app" />
     <meta property="twitter:title" content="URL shorterner" />
     <meta
       property="twitter:description"
@@ -83,7 +82,7 @@
       <div class="container">
         <section class="middle">
           <form>
-            <input type="text" placeholder="shorten a link here" required />
+            <input type="text" placeholder="shorten a link here" required spellcheck="false"/>
             <button type="submit" class="submit">Shorten it!</button>
             <img
               src="/images/bg-shorten-desktop.svg"
@@ -96,6 +95,9 @@
               class="mobile shorten"
             />
           </form>
+          <div class="results">
+
+          </div>
           <div class="advert">
             <h1>Advanced statistics</h1>
             <p>
@@ -146,7 +148,9 @@
               </p>
             </div>
           </div>
+
         </section>
+      </div>
       </div>
     </main>
     <aside>
@@ -209,8 +213,9 @@
         </ul>
       </div>
     </footer>
-
+<div class="loader">
+  <div class="spinner"></div>
+</div>
     <script src="app.js"></script>
-    <script src="toastify.js"></script>
   </body>
 </html>
